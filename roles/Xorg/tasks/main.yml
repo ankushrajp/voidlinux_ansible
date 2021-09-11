@@ -1,0 +1,12 @@
+---
+- name: Install X-server
+  xbps:
+    name: "xorg"
+
+- name: Install X-server supporting utilities
+  xbps:
+    name:
+      - xdg-user-dirs
+      - xdg-utils
+      - xsel
+

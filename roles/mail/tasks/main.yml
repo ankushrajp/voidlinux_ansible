@@ -1,0 +1,4 @@
+---
+- name: Install email client
+  xbps:
+    name: "{{ email_client }}"

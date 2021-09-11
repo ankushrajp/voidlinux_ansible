@@ -1,0 +1,8 @@
+---
+- name: Install terminal 
+  xbps:
+    name: "{{ terminal }}"
+
+- name: Install shell
+  xbps:
+    name: "{{ shell }}"

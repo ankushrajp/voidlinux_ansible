@@ -1,0 +1,10 @@
+[Default Applications]
+x-scheme-handler/magnet=torrent.desktop
+application/x-bittorrent=torrent.desktop
+application/pdf=pdf.desktop
+image/png=img.desktop
+image/jpeg=img.desktop
+image/gif=img.desktop
+
+[Added Associations]
+image/jpeg=feh.desktop;

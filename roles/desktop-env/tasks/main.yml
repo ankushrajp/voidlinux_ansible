@@ -1,0 +1,10 @@
+---
+- name: Install Desktop Env
+  xbps:
+    name: "{{ base_desktop }}"
+
+- name: Install login manager
+  xbps:
+    name: "{{ login_manager }}"
+  notify:
+    - edit lightdm config

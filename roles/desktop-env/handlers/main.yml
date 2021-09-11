@@ -1,0 +1,7 @@
+---
+- name: edit lightdm config
+  lineinfile:
+    path: /etc/lightdm/lightdm.conf
+    regexp: '#greeter-session='
+    line: greeter-session=lightdm-gtk3-greeter
+

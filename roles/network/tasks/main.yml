@@ -1,0 +1,10 @@
+---
+- name: Install Network Manager and nm-applet
+  xbps:
+    name: 
+      - NetworkManager
+      - network-manager-applet
+
+- name: Install networking tools
+  xbps:
+    name: "net-tools"

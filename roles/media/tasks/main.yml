@@ -1,0 +1,12 @@
+---
+- name: Install audio support
+  xbps:
+    name: "{{ audio }}"
+
+- name: Install bluetooth support
+  xbps:
+    name: "{{ bluetooth }}"
+
+- name: Install media players
+  xbps:
+    name: "{{ media_player }}"

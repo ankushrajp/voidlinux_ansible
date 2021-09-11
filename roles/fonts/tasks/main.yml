@@ -1,0 +1,12 @@
+---
+- name: Install fonts
+  xbps:
+    name: "{{ fonts }}"
+
+- name: Copy fonts
+  copy:
+    src: fonts
+    dest: /home/{{ansible_user}}/.local/share/
+
+- name: update font cache
+  command: fc-cache -f

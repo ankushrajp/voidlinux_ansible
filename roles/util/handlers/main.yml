@@ -1,0 +1,22 @@
+---
+- name: copy tlp config
+  copy:
+    src: tlp.conf
+    dest: /etc/tlp.conf
+
+- name: add img.desktop entry
+  copy:
+    src: img.desktop
+    dest: /home/{{ ansible_user }}/.local/share/applications
+
+- name: add pdf.desktop entry
+  copy:
+    src: pdf.desktop
+    dest: /home/{{ ansible_user }}/.local/share/applications
+  notify:
+    - add mimeapps.list
+
+- name: add mimeapps.list
+  copy:
+    src: mimeapps.list
+    dest: /home/{{ ansible_user }}/.config

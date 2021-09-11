@@ -1,0 +1,72 @@
+ansible_connection: ssh
+ansible_user: void
+ansible_ssh_private_key_file: /path/to/ssh/privatekey
+
+web_browser:
+  - firefox
+  - qutebrowser
+
+media_player: vlc
+
+bluetooth:
+  - bluez
+  - libspa-bluetooth
+
+login_manager:
+  - lightdm
+  - lightdm-gtk3-greeter
+
+base_desktop:
+  - i3
+  - i3status
+  - i3lock
+  - dmenu
+  - dunst
+
+editor:
+  - neovim
+  - nano
+
+pdf:
+  - zathura
+  - zathura-pdf-mupdf
+
+image: feh
+
+power_manage: tlp
+
+security:
+  - pass
+  - pam-gnupg
+
+terminal: alacritty
+shell: fish
+
+dev_tools: 
+  - git
+
+audio:
+  - pulseaudio
+  - pavucontrol
+
+email_client:
+  - neomutt
+  - notmuch
+  - isync
+  - msmtp
+  - lynx
+
+misc_util:
+  - brillo
+  - arandr
+  - bat
+  - bpytop
+  - fzf
+  - unzip
+
+file_manager:
+  - ranger
+  - pcmanfm
+
+fonts:
+  - font-sourcecodepro

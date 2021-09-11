@@ -1,0 +1,19 @@
+---
+- name: test
+  hosts: all
+  roles:
+    - Xorg
+    - desktop-env
+    - util
+    - editors
+    - mail
+    - network
+    - shell-env
+    - browsers
+    - dev-tools
+    - fonts
+    - media
+    - security
+  tasks:
+  - debug:
+      msg: "Install Finished!!"

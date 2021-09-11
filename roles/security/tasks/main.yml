@@ -1,0 +1,6 @@
+---
+- name: Install pass store and pam-gnupg
+  xbps:
+    name: "{{ security }}"
+  notify:
+    - setup pam-gnupg

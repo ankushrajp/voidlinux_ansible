@@ -1,0 +1,26 @@
+---
+- name: Install pdf support
+  xbps:
+    name: "{{ pdf }}"
+  notify:
+    - add pdf.desktop entry
+
+- name: Install image support
+  xbps:
+    name: "{{ image }}"
+  notify:
+    - add img.desktop entry
+
+- name: Install other required utilities
+  xbps:
+    name: "{{ misc_util }}"
+      
+- name: Install power management support
+  xbps:
+    name: "{{ power_manage }}"
+  notify:
+    - copy tlp config
+
+
+
+

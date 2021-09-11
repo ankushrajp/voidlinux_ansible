@@ -1,0 +1,4 @@
+---
+- name: Install development tools
+  xbps:
+    name: "{{ dev_tools }}"
